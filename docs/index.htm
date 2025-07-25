@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic CV</title>
+    
+    <!-- EMBEDDED CSS -->
+    <style>
+        /* --- General & Typographic Styles --- */
+        :root {
+            --primary-color: #2c3e50; /* A dark, professional blue-gray */
+            --secondary-color: #3498db; /* A clear, friendly blue for links */
+            --background-color: #f8f9fa;
+            --text-color: #343a40;
+            --container-bg: #ffffff;
+            --border-color: #e9ecef;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: var(--primary-color);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5em;
+            margin-top: 2.5em;
+            margin-bottom: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9; /* A darker blue on hover */
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+
+        /* --- Layout & Structure --- */
+        .container {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: var(--container-bg);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 0.2em 0;
+            color: #555;
+        }
+
+        .contact-info a {
+            margin: 0 10px;
+        }
+        
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--container-bg);
+            z-index: 1000;
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2em;
+        }
+
+        nav a {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0 15px;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        /* --- CV Item Styling --- */
+        .cv-item {
+            margin-bottom: 1.5em;
+        }
+        
+        .cv-item p {
+            margin: 0.1em 0;
+        }
+        
+        .item-meta {
+            font-style: italic;
+            color: #6c757d;
+            font-size: 0.95em;
+        }
+
+        /* Hanging indent for publications/presentations */
+        .publication {
+            margin-bottom: 1.2em;
+            padding-left: 2em;
+            text-indent: -2em;
+        }
+
+        .publication em { /* Journal or Conference Title */
+            font-style: italic;
+        }
+
+        .publication .links a {
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-right: 10px;
+            white-space: nowrap; /* Prevents links from breaking line */
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 1em;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        
+        /* --- Responsive Design for Mobile --- */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+            .container {
+                margin: 0;
+                padding: 1.5em;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+
+            nav {
+                padding: 0;
+            }
+            
+            nav a {
+                display: block;
+                padding: 0.8em;
+                margin: 0;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav a:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- =================== HEADER =================== -->
+        <header>
+            <h1>Dr. Jane Doe</h1>
+            <p>Assistant Professor of Fictional Studies</p>
+            <p>Department of Imaginary Sciences, University of Knowledge</p>
+            <div class="contact-info">
+                <a href="mailto:jane.doe@university.edu">Email</a> |
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> |
+                <a href="https://github.com/your-username" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- =================== NAVIGATION =================== -->
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#papers">Papers</a>
+            <a href="#presentations">Presentations</a>
+            <a href="#data">Data & Code</a>
+        </nav>
+
+        <main>
+            <!-- =================== EDUCATION SECTION =================== -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="cv-item">
+                    <h3>Ph.D. in Fictional Studies</h3>
+                    <p class="item-meta">University of Advanced Knowledge, City, State | 2016 - 2020</p>
+                    <p>Dissertation: "The Metaphysics of Imaginary Numbers in Digital Worlds"</p>
+                </div>
+                <div class="cv-item">
+                    <h3>M.A. in Conceptual Theory</h3>
+                    <p class="item-meta">State University, City, State | 2014 - 2016</p>
+                </div>
+                <div class="cv-item">
+                    <h3>B.S. in Applied Imagination</h3>
+                    <p class="item-meta">College of Ideas, City, State | 2010 - 2014</p>
+                </div>
+            </section>
+
+            <!-- =================== PAPERS SECTION =================== -->
+            <section id="papers">
+                <h2>Peer-Reviewed Papers</h2>
+                <!-- Replace with your papers. Keep the 'publication' class for formatting. -->
+                <div class="publication">
+                    <strong>Doe, J.</strong>, & Smith, J. (2023). An analysis of narrative structures in procedural generation. <em>Journal of Digital Humanities, 12</em>(3), 123-145.
+                    <span class="links">
+                        <a href="link-to-your-pdf.pdf" target="_blank">[PDF]</a>
+                        <a href="https://doi.org/YOUR_DOI" target="_blank">[DOI]</a>
+                    </span>
+                </div>
+                <div class="publication">
+                    <strong>Doe, J.</strong> (2021). The affective impact of virtual reality on memory formation. In <em>Proceedings of the Annual Conference on Human-Computer Interaction</em> (pp. 1-10). ACM Press.
+                    <span class="links">
+                        <a href="link-to-your-pdf.pdf" target="_blank">[PDF]</a>
+                        <a href="https://doi.org/YOUR_DOI" target="_blank">[DOI]</a>
+                    </span>
+                </div>
+                <div class="publication">
+                    Roberts, L., & <strong>Doe, J.</strong> (2019). Quantifying curiosity: A new metric for engagement. <em>Journal of Experimental Psychology: General, 148</em>(5), 789–801.
+                    <span class="links">
+                        <a href="link-to-your-pdf.pdf" target="_blank">[PDF]</a>
+                        <a href="https://doi.org/YOUR_DOI" target="_blank">[DOI]</a>
+                    </span>
+                </div>
+            </section>
+
+            <!-- =================== PRESENTATIONS SECTION =================== -->
+            <section id="presentations">
+                <h2>Conference Presentations</h2>
+                <!-- Replace with your presentations. Use the 'publication' class for consistent formatting. -->
+                <div class="publication">
+                    <strong>Doe, J.</strong> (2023, October). <em>The Role of AI in Scholarly Writing.</em> Paper presented at the International Symposium on Academic Futures, London, UK.
+                </div>
+                <div class="publication">
+                    <strong>Doe, J.</strong>, & Smith, J. (2022, May). <em>Interactive Storytelling and Player Agency.</em> Poster presented at the National Conference on Interactive Media, San Francisco, CA.
+                </div>
+                 <div class="publication">
+                    <strong>Doe, J.</strong> (2021, July). <em>Virtual Environments as Pedagogical Tools.</em> Invited talk at the Education & Technology Summit, Virtual Conference.
+                </div>
+            </section>
+
+            <!-- =================== DATA & CODE SECTION =================== -->
+            <section id="data">
+                <h2>Data & Code</h2>
+                <!-- Replace with your datasets or software projects. -->
+                <div class="cv-item">
+                    <h3>Narrative Structure Analysis Toolkit</h3>
+                    <p class="item-meta">A Python library for analyzing narrative arcs in text corpora. (2023)</p>
+                    <p><a href="https://github.com/your-username/narrative-toolkit" target="_blank">[GitHub Repository]</a></p>
+                </div>
+                <div class="cv-item">
+                    <h3>Virtual Reality Affect Dataset</h3>
+                    <p class="item-meta">EEG and GSR data from 50 participants in a controlled VR study. (2021)</p>
+                    <p><a href="https://zenodo.org/your-record-id" target="_blank">[Zenodo Archive]</a></p>
+                </div>
+            </section>
+        </main>
+        
+        <!-- =================== FOOTER =================== -->
+        <footer>
+            <p>© 2024 Jane Doe. Last updated: August 2024.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
